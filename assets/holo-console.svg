@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+  <title id="title">Holographic introduction console</title>
+  <desc id="desc">A perspective terminal that boots up and introduces CheshireJCat line by line.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#020617"/><stop offset=".5" stop-color="#080318"/><stop offset="1" stop-color="#02010a"/></linearGradient>
+    <linearGradient id="panel" x1="0" x2="1"><stop stop-color="#22d3ee" stop-opacity=".08"/><stop offset=".5" stop-color="#8b5cf6" stop-opacity=".13"/><stop offset="1" stop-color="#f472b6" stop-opacity=".08"/></linearGradient>
+    <linearGradient id="edge" x1="0" x2="1"><stop stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#22d3ee" stroke-opacity=".09"/></pattern>
+    <clipPath id="screen"><polygon points="145,52 1055,52 1122,329 78,329"/></clipPath>
+  </defs>
+  <rect width="1200" height="390" fill="url(#bg)"/>
+  <path d="M600 15 1130 360H70Z" fill="#8b5cf6" opacity=".035"/>
+  <g opacity=".24" stroke="#8b5cf6"><path d="M600 10V380M455 10 205 380M745 10 995 380M520 10 405 380M680 10 795 380"/></g>
+
+  <polygon points="145,52 1055,52 1122,329 78,329" fill="#030712" stroke="url(#edge)" stroke-width="2"/>
+  <polygon points="160,66 1040,66 1098,310 102,310" fill="url(#panel)"/>
+  <g clip-path="url(#screen)"><rect x="70" y="45" width="1060" height="290" fill="url(#grid)"/><rect x="80" y="56" width="1040" height="3" fill="url(#edge)" opacity=".6"><animate attributeName="y" values="56;316;56" dur="4.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.7;0" dur="4.5s" repeatCount="indefinite"/></rect></g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <circle cx="183" cy="82" r="6" fill="#f472b6"><animate attributeName="opacity" values=".35;1;.35" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="204" cy="82" r="6" fill="#fbbf24"/>
+    <circle cx="225" cy="82" r="6" fill="#22d3ee"/>
+    <text x="600" y="88" text-anchor="middle" fill="#64748b" font-size="13" letter-spacing="4">VOID://CHESHIRE/IDENTITY.LOG</text>
+
+    <g font-size="19">
+      <text x="170" y="132" fill="#22d3ee">visitor@wonderland</text><text x="386" y="132" fill="#64748b">:</text><text x="400" y="132" fill="#c084fc">~</text><text x="418" y="132" fill="#e2e8f0">$ whoami</text>
+      <g opacity="0"><text x="190" y="169" fill="#f472b6">›</text><text x="220" y="169" fill="#e2e8f0">lmaomaoz / CheshireJCat</text><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.08;.13;1" dur="8s" repeatCount="indefinite"/></g>
+      <g opacity="0"><text x="190" y="206" fill="#f472b6">›</text><text x="220" y="206" fill="#e2e8f0">I build AI-native tools, visual experiments,</text><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.25;.3;1" dur="8s" repeatCount="indefinite"/></g>
+      <g opacity="0"><text x="220" y="237" fill="#e2e8f0">and playful interfaces from the curious side of code.</text><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.39;.44;1" dur="8s" repeatCount="indefinite"/></g>
+      <g opacity="0"><text x="190" y="275" fill="#22d3ee">status</text><text x="265" y="275" fill="#64748b">::</text><text x="300" y="275" fill="#86efac">ONLINE — OPEN TO STRANGE IDEAS</text><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.55;.6;.94;1" dur="8s" repeatCount="indefinite"/></g>
+    </g>
+    <rect x="663" y="258" width="11" height="22" fill="#22d3ee" filter="url(#glow)"><animate attributeName="opacity" values="0;1;0" dur=".9s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <g fill="none" stroke="url(#edge)" filter="url(#glow)"><path d="M77 329 30 365H1170L1123 329" opacity=".45"/><path d="M254 347H946" stroke-dasharray="16 18"><animate attributeName="stroke-dashoffset" values="0;-68" dur="2s" repeatCount="indefinite"/></path></g>
+  <text x="600" y="378" text-anchor="middle" fill="#475569" font-family="ui-monospace, monospace" font-size="10" letter-spacing="5">HOLOGRAPHIC LINK STABLE</text>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">CheshireJCat in deep space</title>
+  <desc id="desc">An animated neon Cheshire cat floating at the vanishing point of a three dimensional star corridor.</desc>
+  <defs>
+    <linearGradient id="space" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#02010a"/>
+      <stop offset=".48" stop-color="#0b0620"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <radialGradient id="nebula" cx="50%" cy="38%" r="52%">
+      <stop stop-color="#7c3aed" stop-opacity=".34"/>
+      <stop offset=".48" stop-color="#0891b2" stop-opacity=".11"/>
+      <stop offset="1" stop-color="#02010a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="neon" x1="0" x2="1">
+      <stop stop-color="#22d3ee"/>
+      <stop offset=".48" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#f472b6"/>
+      <animate attributeName="x1" values="0;1;0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#22d3ee" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity=".04"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <pattern id="grain" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="4" r=".7" fill="#fff" opacity=".15"/>
+      <circle cx="18" cy="23" r=".55" fill="#22d3ee" opacity=".2"/>
+      <circle cx="29" cy="11" r=".45" fill="#f472b6" opacity=".24"/>
+    </pattern>
+    <clipPath id="viewport"><rect x="0" y="0" width="1200" height="620" rx="28"/></clipPath>
+  </defs>
+  <g clip-path="url(#viewport)">
+    <rect width="1200" height="620" fill="url(#space)"/>
+    <rect width="1200" height="620" fill="url(#nebula)"><animate attributeName="opacity" values=".65;1;.65" dur="7s" repeatCount="indefinite"/></rect>
+    <rect width="1200" height="620" fill="url(#grain)"/>
+
+    <!-- Perspective corridor -->
+    <g fill="none" stroke="url(#neon)" opacity=".26">
+      <path d="M0 30 600 258 1200 30M0 590 600 258 1200 590"/>
+      <path d="M95 0 600 258 1105 0M95 620 600 258 1105 620"/>
+      <path d="M210 0 600 258 990 0M210 620 600 258 990 620"/>
+      <path d="M355 0 600 258 845 0M355 620 600 258 845 620"/>
+      <path d="M0 105 600 258 1200 105M0 520 600 258 1200 520" opacity=".65"/>
+    </g>
+    <g fill="none" stroke="#c084fc" opacity=".23">
+      <rect x="210" y="88" width="780" height="340" rx="44"><animate attributeName="x" values="590;210;590" dur="5s" repeatCount="indefinite"/><animate attributeName="y" values="254;88;254" dur="5s" repeatCount="indefinite"/><animate attributeName="width" values="20;780;20" dur="5s" repeatCount="indefinite"/><animate attributeName="height" values="8;340;8" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.28;0" dur="5s" repeatCount="indefinite"/></rect>
+      <rect x="110" y="45" width="980" height="430" rx="54"><animate attributeName="x" values="590;110;590" dur="5s" begin="2.5s" repeatCount="indefinite"/><animate attributeName="y" values="254;45;254" dur="5s" begin="2.5s" repeatCount="indefinite"/><animate attributeName="width" values="20;980;20" dur="5s" begin="2.5s" repeatCount="indefinite"/><animate attributeName="height" values="8;430;8" dur="5s" begin="2.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.2;0" dur="5s" begin="2.5s" repeatCount="indefinite"/></rect>
+    </g>
+
+    <!-- Star streaks -->
+    <g stroke-linecap="round" filter="url(#glow)">
+      <g stroke="#22d3ee"><path d="M600 258 450 145"><animate attributeName="d" values="M600 258 590 250;M600 258 210 0" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="2.4s" repeatCount="indefinite"/></path><path d="M600 258 760 124"><animate attributeName="d" values="M600 258 610 250;M600 258 1010 0" dur="1.9s" begin=".7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.8;0" dur="1.9s" begin=".7s" repeatCount="indefinite"/></path><path d="M600 258 1020 356"><animate attributeName="d" values="M600 258 610 260;M600 258 1200 398" dur="2.2s" begin="1.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.7;0" dur="2.2s" begin="1.1s" repeatCount="indefinite"/></path></g>
+      <g stroke="#f472b6"><path d="M600 258 195 390"><animate attributeName="d" values="M600 258 590 262;M600 258 0 460" dur="2.8s" begin=".4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.8;0" dur="2.8s" begin=".4s" repeatCount="indefinite"/></path><path d="M600 258 350 475"><animate attributeName="d" values="M600 258 590 268;M600 258 210 620" dur="2.1s" begin="1.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.7;0" dur="2.1s" begin="1.4s" repeatCount="indefinite"/></path><path d="M600 258 870 520"><animate attributeName="d" values="M600 258 610 268;M600 258 980 620" dur="2.5s" begin=".2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.8;0" dur="2.5s" begin=".2s" repeatCount="indefinite"/></path></g>
+    </g>
+
+    <!-- Cat core -->
+    <ellipse cx="600" cy="262" rx="185" ry="105" fill="#8b5cf6" opacity=".13" filter="url(#soft)"><animate attributeName="rx" values="165;205;165" dur="4s" repeatCount="indefinite"/></ellipse>
+    <g filter="url(#glow)">
+      <animateTransform attributeName="transform" type="translate" values="0,-5;0,7;0,-5" dur="5s" repeatCount="indefinite"/>
+      <path d="M487 210 Q525 180 563 216 Q526 237 487 210Z" fill="none" stroke="#22d3ee" stroke-width="5"><animate attributeName="opacity" values="1;.45;1" dur="3.1s" repeatCount="indefinite"/></path>
+      <path d="M637 216 Q675 180 713 210 Q674 237 637 216Z" fill="none" stroke="#f472b6" stroke-width="5"><animate attributeName="opacity" values=".55;1;.55" dur="3.1s" repeatCount="indefinite"/></path>
+      <path d="M478 266 Q600 365 722 266 Q601 318 478 266Z" fill="#070510" stroke="url(#neon)" stroke-width="6" stroke-linejoin="round" stroke-dasharray="460" stroke-dashoffset="460"><animate attributeName="stroke-dashoffset" values="460;0;0;460" keyTimes="0;.28;.82;1" dur="5s" repeatCount="indefinite"/></path>
+      <g stroke="#c084fc" stroke-width="2" opacity=".85">
+        <path d="M516 282 530 307M550 291 558 317M585 297 588 324M620 297 617 324M654 291 646 317M688 282 674 307"/>
+      </g>
+    </g>
+
+    <!-- 3D title extrusion -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="82" font-weight="800" text-anchor="middle" letter-spacing="7">
+      <text x="609" y="503" fill="#210d3c" opacity=".85">CHESHIRE J CAT</text>
+      <text x="606" y="500" fill="#35145e" opacity=".9">CHESHIRE J CAT</text>
+      <text x="603" y="497" fill="#51208a">CHESHIRE J CAT</text>
+      <text x="600" y="494" fill="url(#neon)" filter="url(#glow)">CHESHIRE J CAT</text>
+    </g>
+    <text x="600" y="545" text-anchor="middle" fill="#cbd5e1" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="6">CREATIVE DEVELOPER  //  AI-NATIVE BUILDER</text>
+    <text x="600" y="578" text-anchor="middle" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="4">ENTERING THE CURIOUS SIDE OF CODE</text>
+    <circle cx="386" cy="574" r="3" fill="#22d3ee" filter="url(#glow)"><animate attributeName="cx" values="386;814;386" dur="4s" repeatCount="indefinite"/></circle>
+  </g>
+  <rect x="1" y="1" width="1198" height="618" rx="27" fill="none" stroke="url(#neon)" opacity=".35"/>
+</svg>

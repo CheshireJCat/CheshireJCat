@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" role="img" aria-labelledby="title">
+  <title id="title">Live GitHub telemetry deck</title>
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#020617"/><stop offset=".5" stop-color="#09051a"/><stop offset="1" stop-color="#02010a"/></linearGradient><linearGradient id="n"><stop stop-color="#22d3ee"/><stop offset=".5" stop-color="#c084fc"/><stop offset="1" stop-color="#f472b6"/></linearGradient><filter id="g" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1200" height="240" fill="url(#bg)"/>
+  <g fill="none" opacity=".24"><path d="M0 220 600 80 1200 220" stroke="#8b5cf6"/><path d="M90 240 600 80 1110 240M260 240 600 80 940 240M420 240 600 80 780 240" stroke="#22d3ee"/><path d="M170 180H1030M330 140H870M460 108H740" stroke="#f472b6"/></g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="middle"><text x="600" y="58" fill="url(#n)" font-size="29" font-weight="800" letter-spacing="8" filter="url(#g)">LIVE TELEMETRY</text><text x="600" y="91" fill="#64748b" font-size="12" letter-spacing="5">SIGNALS CAPTURED FROM THE GITHUB EVENT HORIZON</text></g>
+  <g fill="#22d3ee" filter="url(#g)"><circle cx="420" cy="121" r="3"><animate attributeName="cy" values="121;212;121" dur="3.2s" repeatCount="indefinite"/></circle><circle cx="600" cy="88" r="3"><animate attributeName="cy" values="88;222;88" dur="4s" begin=".8s" repeatCount="indefinite"/></circle><circle cx="780" cy="121" r="3"><animate attributeName="cy" values="121;212;121" dur="3.5s" begin="1.4s" repeatCount="indefinite"/></circle></g>
+</svg>
