@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" role="img" aria-labelledby="title desc">
+  <title id="title">Technology orbital system</title>
+  <desc id="desc">TypeScript, React, Vue, Node, CSS and AI orbit a glowing Cheshire core in three dimensional space.</desc>
+  <defs>
+    <radialGradient id="bg"><stop stop-color="#160b32"/><stop offset=".45" stop-color="#070510"/><stop offset="1" stop-color="#02010a"/></radialGradient>
+    <radialGradient id="core"><stop stop-color="#f0abfc"/><stop offset=".35" stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee" stop-opacity=".08"/></radialGradient>
+    <linearGradient id="neon" x1="0" x2="1"><stop stop-color="#22d3ee"/><stop offset=".52" stop-color="#c084fc"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="blur" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="18"/></filter>
+    <clipPath id="frame"><rect width="1200" height="450"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="450" fill="url(#bg)"/>
+    <ellipse cx="600" cy="258" rx="480" ry="158" fill="#22d3ee" opacity=".03"/>
+
+    <g fill="none" stroke-linecap="round">
+      <ellipse cx="600" cy="252" rx="410" ry="130" stroke="#22d3ee" stroke-opacity=".28" stroke-dasharray="4 14"><animate attributeName="stroke-dashoffset" values="0;-72" dur="4s" repeatCount="indefinite"/></ellipse>
+      <ellipse cx="600" cy="252" rx="312" ry="98" stroke="#c084fc" stroke-opacity=".3" stroke-dasharray="24 16"><animate attributeName="stroke-dashoffset" values="0;80" dur="5s" repeatCount="indefinite"/></ellipse>
+      <ellipse cx="600" cy="252" rx="215" ry="66" stroke="#f472b6" stroke-opacity=".35" stroke-dasharray="2 11"><animate attributeName="stroke-dashoffset" values="0;-52" dur="3s" repeatCount="indefinite"/></ellipse>
+      <path d="M180 252H1020" stroke="url(#neon)" stroke-opacity=".12"/>
+    </g>
+
+    <!-- Rear orbiters -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="middle" font-weight="700">
+      <g><circle r="24" fill="#07162a" stroke="#22d3ee" stroke-width="2" filter="url(#glow)"/><text y="6" fill="#67e8f9" font-size="16">TS</text><animateMotion path="M190 252a410 130 0 1 1 820 0a410 130 0 1 1-820 0" dur="12s" repeatCount="indefinite"/></g>
+      <g><circle r="20" fill="#1d0b2e" stroke="#f472b6" stroke-width="2" filter="url(#glow)"/><text y="5" fill="#f9a8d4" font-size="13">CSS</text><animateMotion path="M288 252a312 98 0 1 1 624 0a312 98 0 1 1-624 0" dur="9s" begin="-4s" repeatCount="indefinite"/></g>
+      <g><circle r="22" fill="#07182a" stroke="#22d3ee" stroke-width="2" filter="url(#glow)"/><text y="5" fill="#a5f3fc" font-size="13">NODE</text><animateMotion path="M385 252a215 66 0 1 1 430 0a215 66 0 1 1-430 0" dur="7s" begin="-2s" repeatCount="indefinite"/></g>
+    </g>
+
+    <!-- Core shadow and planet -->
+    <ellipse cx="600" cy="282" rx="105" ry="31" fill="#8b5cf6" opacity=".32" filter="url(#blur)"/>
+    <g filter="url(#glow)">
+      <circle cx="600" cy="235" r="70" fill="url(#core)" opacity=".84"><animate attributeName="r" values="67;74;67" dur="3.4s" repeatCount="indefinite"/></circle>
+      <path d="M564 220Q578 207 592 221M608 221Q622 207 636 220" fill="none" stroke="#070510" stroke-width="5" stroke-linecap="round"/>
+      <path d="M557 244Q600 278 643 244Q600 265 557 244Z" fill="#070510" stroke="#fff" stroke-opacity=".66" stroke-width="2"/>
+    </g>
+    <circle cx="600" cy="235" r="89" fill="none" stroke="url(#neon)" stroke-width="2" stroke-dasharray="55 19"><animateTransform attributeName="transform" type="rotate" from="0 600 235" to="360 600 235" dur="8s" repeatCount="indefinite"/></circle>
+
+    <!-- Front orbiters -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="middle" font-weight="700">
+      <g><circle r="26" fill="#10122d" stroke="#c084fc" stroke-width="2" filter="url(#glow)"/><text y="6" fill="#ddd6fe" font-size="15">REACT</text><animateMotion path="M1010 252a410 130 0 1 1-820 0a410 130 0 1 1 820 0" dur="13s" begin="-6s" repeatCount="indefinite"/></g>
+      <g><circle r="23" fill="#071b19" stroke="#34d399" stroke-width="2" filter="url(#glow)"/><text y="6" fill="#6ee7b7" font-size="15">VUE</text><animateMotion path="M912 252a312 98 0 1 1-624 0a312 98 0 1 1 624 0" dur="10s" begin="-1s" repeatCount="indefinite"/></g>
+      <g><circle r="21" fill="#27102b" stroke="#f472b6" stroke-width="2" filter="url(#glow)"/><text y="6" fill="#fbcfe8" font-size="16">AI</text><animateMotion path="M815 252a215 66 0 1 1-430 0a215 66 0 1 1 430 0" dur="8s" begin="-5s" repeatCount="indefinite"/></g>
+    </g>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="middle">
+      <text x="600" y="55" fill="url(#neon)" font-size="30" font-weight="800" letter-spacing="7" filter="url(#glow)">ORBITAL TOOLCHAIN</text>
+      <text x="600" y="84" fill="#64748b" font-size="12" letter-spacing="4">IDEAS ENTER  ·  SYSTEMS EMERGE  ·  CURIOSITY REMAINS</text>
+      <text x="600" y="414" fill="#475569" font-size="11" letter-spacing="6">CORE SYNCHRONIZATION 100%</text>
+    </g>
+    <circle cx="420" cy="410" r="2" fill="#22d3ee"><animate attributeName="cx" values="420;780;420" dur="5s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>
